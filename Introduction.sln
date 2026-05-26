@@ -5,11 +5,13 @@ VisualStudioVersion = 17.14.37111.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Introduction", "Introduction\Introduction.csproj", "{F492DF62-F264-4CE9-80B8-98AAEE32D66F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTypes", "DataTypes\DataTypes.csproj", "{795FA61F-D300-40ED-9D0B-E1CBFCD2A4C3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTasks", "SimpleTasks\SimpleTasks.csproj", "{D821F9CC-7022-48D7-8426-BB7453C2F2F5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game", "Game\Game.csproj", "{217D07C6-254E-496F-866E-D5DA101939C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geometry", "Geometry\Geometry.csproj", "{4A9C4497-CBCC-455B-AA57-B590B2D3A792}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardChess", "HardChess\HardChess.csproj", "{D60E9370-58E2-428C-B9B5-CA97F5EEBAB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +23,6 @@ Global
 		{F492DF62-F264-4CE9-80B8-98AAEE32D66F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F492DF62-F264-4CE9-80B8-98AAEE32D66F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F492DF62-F264-4CE9-80B8-98AAEE32D66F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{795FA61F-D300-40ED-9D0B-E1CBFCD2A4C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{795FA61F-D300-40ED-9D0B-E1CBFCD2A4C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{795FA61F-D300-40ED-9D0B-E1CBFCD2A4C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{795FA61F-D300-40ED-9D0B-E1CBFCD2A4C3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D821F9CC-7022-48D7-8426-BB7453C2F2F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D821F9CC-7022-48D7-8426-BB7453C2F2F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D821F9CC-7022-48D7-8426-BB7453C2F2F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +31,14 @@ Global
 		{217D07C6-254E-496F-866E-D5DA101939C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{217D07C6-254E-496F-866E-D5DA101939C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{217D07C6-254E-496F-866E-D5DA101939C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A9C4497-CBCC-455B-AA57-B590B2D3A792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A9C4497-CBCC-455B-AA57-B590B2D3A792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A9C4497-CBCC-455B-AA57-B590B2D3A792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A9C4497-CBCC-455B-AA57-B590B2D3A792}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D60E9370-58E2-428C-B9B5-CA97F5EEBAB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D60E9370-58E2-428C-B9B5-CA97F5EEBAB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D60E9370-58E2-428C-B9B5-CA97F5EEBAB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D60E9370-58E2-428C-B9B5-CA97F5EEBAB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

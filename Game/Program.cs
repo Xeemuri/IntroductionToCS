@@ -75,7 +75,6 @@ namespace Game
                     case ConsoleKey.RightArrow:
                     case ConsoleKey.D: x++; break;
                 }
-                if(ConsoleKe)
                 if (x < 0) x = 0;
                 if (y < 0) y = 0;
                 if(x == 0 || y == 0) Console.Beep(50,20);

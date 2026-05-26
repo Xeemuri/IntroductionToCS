@@ -25,7 +25,7 @@ namespace SimpleTasks
                 f *= i;
                 Console.WriteLine($"{i}! = {f}");
             } 
-#endif //FACTORIAL
+#endif 
 
 #if POWER
             Console.Write("Введите основание степени: ");
@@ -46,13 +46,15 @@ namespace SimpleTasks
             }
             Console.WriteLine(N); 
 #endif
+#if FIBONACCI
             Console.Write("Введите предел для чисел Фибоначчи: ");
             int n = Convert.ToInt32(Console.ReadLine());
             for (int a = 0, b = 1, c = a + b; a < n; c = (a = b) + (b = c))
             {
                 Console.Write(a + "\t");
             }
-            Console.WriteLine();
+            Console.WriteLine(); 
+#endif
         }
     }
 }
