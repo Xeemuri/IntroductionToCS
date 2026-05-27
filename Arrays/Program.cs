@@ -1,5 +1,5 @@
-﻿#define ARRAYS_1
-//#define ARRAYS_2
+﻿//#define ARRAYS_1
+#define ARRAYS_2
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,18 +44,27 @@ namespace Arrays
             Console.WriteLine($"Length: {i_arr_2.Length}");
             Console.WriteLine($"Rows: {i_arr_2.GetLength(0)}");
             Console.WriteLine($"Cols: {i_arr_2.GetLength(1)}");
+            int sum = 0, avg = 0, min = i_arr_2[0,0], max = i_arr_2[0,0];
             for (int i = 0; i < i_arr_2.GetLength(0); i++)
             {
                 for (int j = 0; j < i_arr_2.GetLength(1); j++)
                 {
                     Console.Write(i_arr_2[i, j] + "\t");
+                    sum += i_arr_2[i, j];
+                    if (i_arr_2[i,j] < min) min = i_arr_2[i,j];
+                    if(i_arr_2[i,j] > max) max = i_arr_2[i,j];
                 }
                 Console.WriteLine();
             }
+            avg = sum / i_arr_2.Length;
             foreach (int i in i_arr_2)
             {
                 Console.Write(i + "\t");
-            } 
+            }
+            Console.WriteLine($"Сумма: {sum}");
+            Console.WriteLine($"Среднее арифметическое: {avg}");
+            Console.WriteLine($"Минимальное значение: {min}");
+            Console.WriteLine($"Максимальное значение: {max}");
 #endif
 
         }
