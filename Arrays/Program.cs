@@ -1,6 +1,6 @@
 ﻿//#define ARRAYS_1
 //#define ARRAYS_2
-#define JAGGED_ARRAYS
+//#define JAGGED_ARRAYS
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -88,6 +88,19 @@ namespace Arrays
                     Console.WriteLine();
                 }
 #endif
+            Console.Write("Введите размер массива: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] arr = new int[n];
+            Random rand = new Random(0);
+            for(int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = rand.Next(50,100);
             }
+            foreach(int i in arr)
+            {
+                Console.Write(i + "\t");
+            }
+            Console.WriteLine();
         }
     }
+}
