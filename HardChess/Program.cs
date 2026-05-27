@@ -14,19 +14,29 @@ namespace HardChess
             int n = Convert.ToInt32(Console.ReadLine());
 
 
-            for (int height = 0; height < n; height++)
-            {
-                for (int width = 0; width < n; width++)
+            for (int i = 1; i <= n; i++)
+            { 
+                for (int j = 1; j <= n; j++) 
                 {
-                    for (int i = 0; i < n; i++)
+                    for (int l = 1; l <= n; l++)
                     {
-                        for (int j = 0; j < n; j++)
+                        if ((l + i) % 2 == 0)
                         {
-                            Console.Write((height + width) % 2 == 0 ? "* " : "  ");
+                            for (int k = 0; k < n; k++)
+                            {
+                                Console.Write("* ");
+                            }
+                        }
+                        else
+                        {
+                            for (int k = 0; k < n; k++)
+                            {
+                                Console.Write("  ");
+                            }
                         }
                     }
+                    Console.WriteLine();
                 }
-                Console.WriteLine();
             }
         }
     }
