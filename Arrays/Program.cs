@@ -1,5 +1,6 @@
 ﻿//#define ARRAYS_1
-#define ARRAYS_2
+//#define ARRAYS_2
+#define JAGGED_ARRAYS
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,29 +45,49 @@ namespace Arrays
             Console.WriteLine($"Length: {i_arr_2.Length}");
             Console.WriteLine($"Rows: {i_arr_2.GetLength(0)}");
             Console.WriteLine($"Cols: {i_arr_2.GetLength(1)}");
-            int sum = 0, avg = 0, min = i_arr_2[0,0], max = i_arr_2[0,0];
             for (int i = 0; i < i_arr_2.GetLength(0); i++)
             {
                 for (int j = 0; j < i_arr_2.GetLength(1); j++)
                 {
                     Console.Write(i_arr_2[i, j] + "\t");
-                    sum += i_arr_2[i, j];
-                    if (i_arr_2[i,j] < min) min = i_arr_2[i,j];
-                    if(i_arr_2[i,j] > max) max = i_arr_2[i,j];
                 }
                 Console.WriteLine();
             }
-            avg = sum / i_arr_2.Length;
             foreach (int i in i_arr_2)
             {
                 Console.Write(i + "\t");
             }
-            Console.WriteLine($"Сумма: {sum}");
-            Console.WriteLine($"Среднее арифметическое: {avg}");
-            Console.WriteLine($"Минимальное значение: {min}");
-            Console.WriteLine($"Максимальное значение: {max}");
+            Console.WriteLine();
+            Console.WriteLine($"Сумма: {i_arr_2.Cast<int>().ToArray().Sum()}");
+            Console.WriteLine($"Среднее арифметическое: {i_arr_2.Cast<int>().ToArray().Average()}");
+            Console.WriteLine($"Минимальное значение: {i_arr_2.Cast<int>().ToArray().Min()}");
+            Console.WriteLine($"Максимальное значение: {i_arr_2.Cast<int>().ToArray().Max()}");
 #endif
-
+#if JAGGED_ARRAYS
+            int[][] j_arr =
+            {
+                new int[]{3,5,8,13,21 },
+                new int[]{34,55,89},
+                new int[]{144,233,377,610,987 }
+            };
+            for (int i = 0; i < j_arr.Length; i++)
+            {
+                for (int j = 0; j < j_arr[i].Length; j++)
+                {
+                    Console.Write(j_arr[i][j] + "\t");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+                foreach (int[] arr in j_arr)
+                {
+                    foreach (int j in arr)
+                    {
+                        Console.Write(j + "\t");
+                    }
+                    Console.WriteLine();
+                }
+#endif
+            }
         }
     }
-}
