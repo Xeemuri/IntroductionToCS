@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geometry", "Geometry\Geomet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HardChess", "HardChess\HardChess.csproj", "{D60E9370-58E2-428C-B9B5-CA97F5EEBAB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PascalTriangle", "PascalTriangle\PascalTriangle.csproj", "{72E91DDA-C7B2-4791-AE26-B5B95626639C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D60E9370-58E2-428C-B9B5-CA97F5EEBAB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D60E9370-58E2-428C-B9B5-CA97F5EEBAB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D60E9370-58E2-428C-B9B5-CA97F5EEBAB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E91DDA-C7B2-4791-AE26-B5B95626639C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E91DDA-C7B2-4791-AE26-B5B95626639C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E91DDA-C7B2-4791-AE26-B5B95626639C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E91DDA-C7B2-4791-AE26-B5B95626639C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
